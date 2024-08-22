@@ -4,10 +4,19 @@ Author: Tim PKL Siswa SMK Telkom Purwokerto 2024
 Description: Tema ini adalah tema WordPress yang dikembangkan untuk website Breezelabs versi block theme.
 Tags: block-theme, custom-logo, custom-menu, featured-images, theme-options
 Version: 1.0.0
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 7.0
+Requires at least: 6.2
+Tested up to: 6.6.1
+Requires PHP: 7.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tema-breezelabs-block
 */
+
+
+.wp-site-blocks > header,
+.wp-block-template-part__content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
