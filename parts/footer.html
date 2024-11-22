@@ -10,22 +10,30 @@
 >
   <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
   <div class="wp-block-group alignwide">
-    <!-- wp:columns {"align":"full"} -->
+    <!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60"}}}} -->
     <div class="wp-block-columns alignfull">
       <!-- wp:column -->
       <div class="wp-block-column">
         <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
         <div class="wp-block-group">
-          <!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"h5"} /-->
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+          <div class="wp-block-group">
+            <!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"h5"} /-->
 
-          <!-- wp:paragraph -->
-          <p>Deskripsi company.</p>
-          <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p>Deskripsi company.</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
-          <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
           <div class="wp-block-group">
             <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group">
+              <!-- wp:html -->
+              <i class="fa-solid fa-location-dot"></i>
+              <!-- /wp:html -->
+
               <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"h6"} -->
               <p
                 class="has-h-6-font-size"
@@ -43,10 +51,14 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
           <div class="wp-block-group">
             <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group">
+              <!-- wp:html -->
+              <i class="fa-solid fa-phone"></i>
+              <!-- /wp:html -->
+
               <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"h6"} -->
               <p
                 class="has-h-6-font-size"
@@ -64,10 +76,14 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+          <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
           <div class="wp-block-group">
             <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group">
+              <!-- wp:html -->
+              <i class="fa-solid fa-envelope"></i>
+              <!-- /wp:html -->
+
               <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"h6"} -->
               <p
                 class="has-h-6-font-size"
@@ -91,7 +107,7 @@
 
       <!-- wp:column -->
       <div class="wp-block-column">
-        <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+        <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
         <div class="wp-block-group">
           <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
           <div class="wp-block-group">
@@ -99,7 +115,7 @@
             <p style="font-style: normal; font-weight: 700">Services</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:navigation {"ref":4,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->
+            <!-- wp:navigation {"ref":4,"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} /-->
           </div>
           <!-- /wp:group -->
 
@@ -109,7 +125,7 @@
             <p style="font-style: normal; font-weight: 700">Page Links</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:navigation {"ref":4,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->
+            <!-- wp:navigation {"ref":4,"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} /-->
           </div>
           <!-- /wp:group -->
 
@@ -119,7 +135,7 @@
             <p style="font-style: normal; font-weight: 700">Legal</p>
             <!-- /wp:paragraph -->
 
-            <!-- wp:navigation {"ref":4,"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->
+            <!-- wp:navigation {"ref":4,"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} /-->
           </div>
           <!-- /wp:group -->
         </div>
@@ -151,13 +167,13 @@
     />
     <!-- /wp:separator -->
 
-    <!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+    <!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
     <div class="wp-block-group alignfull">
       <!-- wp:paragraph -->
       <p>Copyright © 2024 Breezelabs. All rights reserved.</p>
       <!-- /wp:paragraph -->
 
-      <!-- wp:social-links {"openInNewTab":true,"layout":{"type":"flex","justifyContent":"right"}} -->
+      <!-- wp:social-links {"openInNewTab":true,"layout":{"type":"flex","justifyContent":"left"}} -->
       <ul class="wp-block-social-links">
         <!-- wp:social-link {"url":"#","service":"facebook","label":""} /-->
 

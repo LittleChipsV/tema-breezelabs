@@ -219,12 +219,12 @@
         },
         {
           "slug": "h2",
-          "size": "clamp(2rem, 2rem + 0.5vw, 2.5rem)",
+          "size": "clamp(2rem, 2rem + 0.5vw, 2.25rem)",
           "name": "H2"
         },
         {
           "slug": "h1",
-          "size": "clamp(2.5rem, 2.5rem + 0.5vw, 3rem)",
+          "size": "clamp(2.25rem, 2.25rem + 0.5vw, 3rem)",
           "name": "H1"
         }
       ]

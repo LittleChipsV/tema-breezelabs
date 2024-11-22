@@ -1,0 +1,9 @@
+@import './breakpoints';
+
+.wp-block-columns {
+   @media only screen and (max-width: $wp-tablet-breakpoint) {
+      .first-in-mobile {
+         order: -1;
+      }
+   }
+}

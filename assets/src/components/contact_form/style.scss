@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+@import '../../scss/breakpoints';
+
+:root {
+   --fluentform-border-radius: 0;
+   --fluentform-primary: #214D4D;
+}
+
+.fluentform  {
+   input, textarea {
+      border-radius: 0;
+   }
+
+   textarea {
+      resize: vertical;
+   }
+
+   button[type="submit"] {
+      border-radius: 0;
+   }
+}

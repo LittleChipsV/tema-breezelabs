@@ -1,0 +1,42 @@
+<!-- wp:template-part {"slug":"header","theme":"tema-breezelabs"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main
+  class="wp-block-group"
+  style="
+    padding-top: var(--wp--preset--spacing--70);
+    padding-bottom: var(--wp--preset--spacing--70);
+  "
+>
+  <!-- wp:heading {"textAlign":"center","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} -->
+  <h1
+    class="wp-block-heading has-text-align-center has-primary-color has-text-color has-link-color"
+  >
+    Page Not Found
+  </h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary"} -->
+  <p
+    class="has-text-align-center has-primary-color has-text-color has-link-color"
+  >
+    Halaman yang Anda cari tidak ditemukan.
+  </p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+  <div class="wp-block-buttons">
+    <!-- wp:button {"backgroundColor":"primary"} -->
+    <div class="wp-block-button">
+      <a
+        class="wp-block-button__link has-primary-background-color has-background wp-element-button"
+        >Kembali ke Home</a
+      >
+    </div>
+    <!-- /wp:button -->
+  </div>
+  <!-- /wp:buttons -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"tema-breezelabs"} /-->

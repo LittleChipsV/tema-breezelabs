@@ -1,0 +1,77 @@
+@import '../../scss/variables';
+@import '../../scss/breakpoints';
+
+.tabs {
+   display: flex;
+   column-gap: 3rem;
+
+   @media only screen and (max-width: $wp-tablet-breakpoint){
+      flex-direction: column;
+   }
+
+   &__nav {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      @media only screen and (max-width: $wp-tablet-breakpoint){
+         flex-direction: row;
+         overflow-x: scroll;
+         margin-bottom: 2em;
+      }
+    }
+    
+    &__link {
+      padding: 0.75em 1.25em;
+      cursor: pointer;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: var(--wp--preset--font-size--medium);
+      transition: background 500ms;
+      min-width: 13em;
+      color: $color-primary;
+      background-color: transparent;
+      font-weight: bold;
+
+      &--active {
+         background-color: $color-secondary;
+         color: $color-background;
+       }
+
+       @media only screen and (max-width: $wp-tablet-breakpoint) {
+         text-align: center;
+       }
+    }
+    
+    &__content {
+      flex: 3;
+    }
+    
+    &__panel {
+      display: none;
+
+      &--active{
+         display: block;
+      }
+    }
+    
+    &__title {
+      margin-top: 0;
+      color: $color-secondary;
+    }
+    
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+
+      &-item {
+         border-bottom: 1px solid black;
+
+         &-title {
+            margin: 0;
+         }
+      }
+   }
+ }
