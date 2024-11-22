@@ -7,3 +7,9 @@
       }
    }
 }
+
+.wp-block-navigation__responsive-close {
+   @media only screen and (max-width: $wp-header-navigation-breakpoint) {
+      padding: 1rem;
+   }
+}
